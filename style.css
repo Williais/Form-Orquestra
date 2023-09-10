@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primaria: #1c171b;
+    --secundaria: #faebd7;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primaria);
+    color: var(--primaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+form{
+    margin: auto;
+    background-color: #faebd7;
+    max-width: 80%;
+    width: 500px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.header{
+    text-align: justify;
+}
+
+.header h1{
+    text-align: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+.header p{
+    font-size: 1.1rem;
+    margin: 25px auto;
+}
+
+.input-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 25px 0;
+}
+
+.input-field label{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+
+    cursor: text;
+    color: #1c171b;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.input-field input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid #b6aca0;
+    padding: 10px;
+    background-color: var(--secundaria);
+    color: var(--primaria);
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.input-field input:focus,
+.input-field input:valid{
+    border-bottom: 2px solid var(--primaria);
+}
+
+.input-field input:focus ~ label,
+.input-field input:valid ~ label{
+    transform: translatey(-24px);
+    font-size: 12px;
+    font-weight: 400;
+    color: #1c171b;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.instrumentRadio{
+    display: flex;
+    margin: 20px 0;
+    gap: 15px;
+}
+
+.custom-radio input{
+    display: none;
+}
+
+.custom-radio input + label:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+  
+.custom-radio input:checked + label:before {
+    background-color: white;
+    box-sizing: border-box;
+    border: 5px solid #1c171b;
+    padding: 4px;
+}
+
+@media (max-width: 550px){
+    .instrumentRadio{
+        display: block;
+    }
+}
+
+.label{
+    color: #1c171b;
+    font-weight: 500;
+}
+
+.selectGp{
+    display: flex;
+    gap: 20px;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appeareance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0!important;
+    background: #1c171b;
+    flex: 1;
+    padding: 0 .5em;
+    color: #faebd7;
+    cursor: pointer;
+    font-size: 1em;
+   
+}
+
+select::-ms-expand{
+    display: none;
+}
+
+.select{
+    position: relative;
+    display: flex;
+    width: 11em;
+    line-height: 3;
+    background: #1c171b;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+/* Select Menu 
+
+.select-menu{
+    width: 80%;
+    margin: 10px auto;
+    
+}
+
+.select-menu .select-btn{
+    display: flex;
+    height: 45px;
+    background: #1c171b;
+    color: #faebd7;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+
+}
+
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+    
+}
+
+.select-menu.active .options{
+    display: block; 
+}
+
+.select-menu .options{
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #1c171b;
+    color: #faebd7;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.option{
+    display: flex;
+    height: 45px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #1c171b;
+}
+
+.option:hover{
+    background: #534550;
+}
+
+*/
+
+#submit{
+    padding: 15px;
+    background-color: var(--primaria);
+    color: #faebd7;
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px 0 0 0;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="/assets/orchestra-icon.jpg" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário da Orquestra</title>
+</head>
+<body>
+
+        <form action="https://api.sheetmonkey.io/form/hhvKioohPA5aZs37Zgkqnh" method="post">
+            <div class="header">
+                <h1>Formulário da Orquestra</h1>
+                <p>O objetivo deste formulário é coletar as informações necessárias dos membros da nossa Orquestra. 
+                    Os <strong>Antigos</strong> e <strong>Atuais</strong> membros estarão nessa relação.
+                </p>
+            </div>
+
+            <div class="input-field">
+                <input required type="text" id="name" name="Nome">
+                <label for="name">Nome e Sobrenome</label>
+            </div>
+
+            <div class="input-field">
+                <input type="text" id="redeSocial" name="Rede Social" placeholder="@">
+                <label for="name">Rede Social (Opcional)</label>
+            </div>
+
+            <div class="input-field">
+                <input name="Data de Nascimento" type="date" id="date"> 
+                <label for="date">Data de Nascimento</label>
+            </div>
+
+            <div class="input-field">
+                <input required type="number" id="date-orquestra" min="2014" max="2023" maxlength="4" name="ingresso na Orquestra"> 
+                <label for="date-orquestra">Em que Ano Entrou na Orquestra?</label>
+            </div>
+            
+            <div class="instrumentRadio">
+                <p class="label">Possui Instrumento próprio?</p>
+                <div class="custom-radio">
+                    <input type="radio" id="haveInstrument1" value="Sim" name="Instrum Próprio">
+                    <label for="haveInstrument1">Sim</label>
+                </div>
+                <div class="custom-radio">
+                    <input type="radio" id="haveInstrument2" value="Não" name="Instrum Próprio" checked>
+                    <label for="haveInstrument2">Não</label>
+                </div>
+            </div>
+            
+            <div class="selectGp">
+                <p class="label">Qual Instrumento Você Toca:</p>
+                <div class="select">
+                    <select name="QualinstrumentoToca" id="format" required>
+                        <option selected disabled>Selecione Intrumento</option>
+                        <option value="Violino I">Violino I</option>
+                        <option value="Violino II">Violino II</option>
+                        <option value="Viola">Viola</option>
+                        <option value="Violoncelo">Violoncelo</option>
+                        <option value="ContraBaixo">ContraBaixo</option>
+                        <option value="Flauta-Transversal">Flauta-Transversal</option>
+                        <option value="Clarinete">Clarinete</option>
+                        <option value="Trompa">Trompa</option>
+                        <option value="Trompete">Trompete</option>
+                        <option value="trombone">trombone</option>
+                        <option value="Tuba">Tuba</option>
+                        <option value="Sax-Alto">Sax-Alto</option>
+                        <option value="Sax-Soprano">Sax-Soprano</option>
+                        <option value="Sax-Tenor">Sax-Tenor</option>
+                        <option value="Teclado">Teclado</option>
+                        <option value="Violão">Violão</option>
+                        <option value="Guitarra">Guitarra</option>
+                        <option value="Bateria">Bateria</option>
+                        <option value="Percussão">Percussão</option>
+                    </select>
+                </div>
+            </div>
+
+            <input type="submit" id="submit">
+        </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
